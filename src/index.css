@@ -1,0 +1,89 @@
+*,*::after,*::before{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+}
+html{
+  font-size: 16px;
+}
+body{
+  background-color: rgb(255, 69, 0,0.1);
+}
+img{
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid orangered;
+}
+.section{
+  text-align: center;
+  margin-top: 10rem;
+  
+}
+h2{
+  font-size: 2rem;
+  color: orangered;
+}
+.section-center{
+  margin: 0 auto;
+  margin-top: 4rem;
+  position: relative;
+  display: flex;
+  height:450px ;
+  min-width: 300px;
+  max-width: 800px;
+  overflow: hidden;
+}
+article{
+  position: absolute;
+  opacity: 0;
+  transition: all 1s linear;
+}
+article.prevSlide{
+  transform: translateX(-100%);
+
+}
+article.activeSlide{
+  opacity: 1;
+  transform: translateX(0);
+}
+article.nextSlide{
+  transform: translateX(100%);
+}
+
+p{
+  margin: 1rem 2rem;
+}
+button{
+  align-self: center;
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: orangered;
+  cursor: pointer;
+}
+button:hover{
+  font-size: 1.8rem;
+}
+.prev{
+  top: 12rem;
+  left: 1rem;
+}
+.next{
+  top: 12rem;
+  right: 1rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+h4{
+  font-size: 1.2rem;
+  color: orangered;
+}
+.icon{
+  font-size: 3rem;
+  color: orangered;
+}
