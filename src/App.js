@@ -7,7 +7,7 @@ import {FiChevronRight,FiChevronLeft} from 'react-icons/fi'
 import {FaQuoteRight} from 'react-icons/fa'
 
 const App = () => {
-  const [people,SetPeople] = useState(data);
+  const people= data;
   const[index,setIndex] = useState(0);
   useEffect(()=>{
     const lastIndex = people.length-1;
